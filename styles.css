@@ -219,3 +219,8 @@ nav a {
   font-size: 0.95rem;
   color: #555;
 }
+
+nav a.active {
+  color: #00f0b8;
+  text-decoration: underline;
+}
