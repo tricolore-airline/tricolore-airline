@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Tricolore Airline</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER (logo + nav) -->
+  <header>
+    <a href="index.html" class="logo" aria-label="Tricolore Airline home">
+      <img src="assets/logo.png" alt="Tricolore Airline logo" height="60">
+    </a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#"">Destinations</a>
+      <a href="#">Booking</a>
+      <a href="about.html" class="active">About</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO (mini) -->
+  <section class="hero about-hero" style="min-height:40vh; padding:80px 20px;">
+    <div class="hero-content">
+      <h2>About Tricolore Airline</h2>
+      <p>The official airline of the chromatic sky — connecting imagination with the future of travel.</p>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="container" style="padding:40px 20px; max-width:1100px; margin:0 auto;">
+
+    <!-- Mission -->
+    <section class="about-section" aria-labelledby="mission-title" style="margin-bottom:40px;">
+      <h3 id="mission-title">Our Mission</h3>
+      <p>
+        At <strong>Tricolore Airline</strong> we aim to bring the best sensation to every journey.
+        We blend innovative virtual experiences with warm, reliable service — creating flights that are as memorable as they are comfortable.
+      </p>
+    </section>
+
+    <!-- History -->
+    <section class="about-section" aria-labelledby="history-title" style="margin-bottom:40px;">
+      <h3 id="history-title">Our Story</h3>
+      <p>
+        Founded in imagination and inspired by the music of the skies, Tricolore Airline began as a concept to celebrate creativity in travel.
+        Over time, we've evolved into a fictional but fully-styled airline that explores futuristic cabins, VOCALOID-inspired entertainment, and vibrant destinations.
+      </p>
+      <ul>
+        <li><strong>2019</strong> — Concept and visual identity conceived.</li>
+        <li><strong>2024</strong> — First demo flights and prototype cabin revealed.</li>
+        <li><strong>2025</strong> — Tricolore Airline website launched with virtual booking mockups.</li>
+      </ul>
+    </section>
+
+    <!-- Values / What we offer -->
+    <section class="about-section" aria-labelledby="values-title" style="margin-bottom:40px;">
+      <h3 id="values-title">What We Offer</h3>
+
+      <div class="features-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(240px,1fr)); gap:20px; margin-top:16px;">
+        <div class="feature-card" style="background:white; padding:18px; border-radius:12px; box-shadow:0 8px 18px rgba(0,0,0,0.08);">
+          <h4>Cabin Comfort</h4>
+          <p>Chromatic seats, ambient lighting, and ergonomic design for relaxed voyages.</p>
+        </div>
+
+        <div class="feature-card" style="background:white; padding:18px; border-radius:12px; box-shadow:0 8px 18px rgba(0,0,0,0.08);">
+          <h4>VOCALOID+ Entertainment</h4>
+          <p>Holographic shows and curated soundscapes inspired by vocaloid music for an immersive flight.</p>
+        </div>
+
+        <div class="feature-card" style="background:white; padding:18px; border-radius:12px; box-shadow:0 8px 18px rgba(0,0,0,0.08);">
+          <h4>Unique Destinations</h4>
+          <p>Imaginary terminals and chromatic skylines — explore places beyond the ordinary.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Fleet (visual) -->
+    <section class="about-section" aria-labelledby="fleet-title" style="margin-bottom:40px;">
+      <h3 id="fleet-title">Our Fleet</h3>
+      <p>
+        Our virtual fleet features light, efficient craft designed for comfort and visual flair. Below is a showcase of our most iconic livery styles.
+      </p>
+
+      <div style="display:flex; gap:16px; margin-top:16px; flex-wrap:wrap;">
+        <img src="assets/fleet1.jpg" alt="Tricolore livery 1" style="width:320px; height:180px; object-fit:cover; border-radius:10px; box-shadow:0 6px 14px rgba(0,0,0,0.12);">
+        <img src="assets/fleet2.png" alt="Tricolore livery 2" style="width:320px; height:180px; object-fit:cover; border-radius:10px; box-shadow:0 6px 14px rgba(0,0,0,0.12);">
+      </div>
+    </section>
+
+    <!-- Crew teaser -->
+    <section class="about-section" aria-labelledby="crew-title" style="margin-bottom:40px;">
+      <h3 id="crew-title">Meet the Crew</h3>
+      <p>From Captain Miku to Security Chief Meiko — our crew blends charm and precision. <a href="index.html#meet-the-crew">See the full crew</a>.</p>
+    </section>
+
+    <!-- Contact / Social -->
+    <section class="about-section" aria-labelledby="contact-title" style="margin-bottom:40px;">
+      <h3 id="contact-title">Contact & Social</h3>
+      <p>
+        For collaboration or questions, reach out on our social channels or send a message.
+      </p>
+
+      <ul style="list-style:none; padding:0; margin-top:12px;">
+        <li>✉️ <strong>Email:</strong> <a href="mailto:daijin85@gmail.com">daijin85@gmail.com</a></li>
+        <li>🐦 <strong>Twitter:</strong> <a href="https://x.com/triairline" target="_blank" rel="noopener">@triairline</a></li>
+        <li>📷 <strong>Project Sekai ID:</strong> <a>447663513649975299</a></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer style="padding:24px 20px; text-align:center; background: linear-gradient(180deg, #ffffff, #f0f6ff);">
+    <p style="margin:0;">© <span id="year"></span> Tricolore Airline · All fictional & for educational use</p>
+  </footer>
+
+  <script>
+    // small script to set year automatically
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
